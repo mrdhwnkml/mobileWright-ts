@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "run-test": "npx mobilewright test --reporter html",
+    "report": "npx mobilewright show-report"
+  },
+  "devDependencies": {
+    "@mobilewright/test": "0.0.32",
+    "@types/node": "^25.9.1",
+    "mobilewright": "0.0.32",
+    "typescript": "^6.0.3"
+  }
+}
