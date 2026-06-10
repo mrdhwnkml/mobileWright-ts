@@ -28,8 +28,11 @@ jobs:
 
             until adb shell getprop sys.boot_completed | grep -m 1 "1"; do
               echo "Waiting for emulator..."
+              adb devices
               sleep 5
             done
+
+            echo "Emulator booted"
 
             adb devices
 
