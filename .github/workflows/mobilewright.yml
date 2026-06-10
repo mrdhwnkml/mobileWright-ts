@@ -20,9 +20,8 @@ jobs:
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 34
+          arch: x86_64
           profile: pixel_6
           script: |
-            which adb
-            adb version
             adb devices
             npx mobilewright test
