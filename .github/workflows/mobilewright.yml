@@ -16,4 +16,11 @@ jobs:
 
       - run: npm install
 
-      - run: npx mobilewright test
+      - name: Android Emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          profile: pixel_6
+          script: |
+            adb devices
+            npx mobilewright test
