@@ -22,5 +22,7 @@ jobs:
           api-level: 34
           profile: pixel_6
           script: |
+            which adb
+            adb version
             adb devices
             npx mobilewright test
